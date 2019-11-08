@@ -14,13 +14,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="short-arrow-up.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZNd-eH-vgV">
+                                <rect key="frame" x="152" y="199" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="short-arrow-right.png" translatesAutoresizingMaskIntoConstraints="NO" id="FRB-5h-mxh">
+                                <rect key="frame" x="254" y="298" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="short-arrow-down.png" translatesAutoresizingMaskIntoConstraints="NO" id="2sa-oC-Np3">
+                                <rect key="frame" x="152" y="391" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="short-arrow-left.png" translatesAutoresizingMaskIntoConstraints="NO" id="MTQ-PE-swT">
+                                <rect key="frame" x="51" y="297.5" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imgViewDown" destination="2sa-oC-Np3" id="m3p-Fz-MVF"/>
+                        <outlet property="imgViewLeft" destination="MTQ-PE-swT" id="IHz-qm-Vle"/>
+                        <outlet property="imgViewRight" destination="FRB-5h-mxh" id="E6I-DP-gWe"/>
+                        <outlet property="imgViewUp" destination="ZNd-eH-vgV" id="6Gi-pv-EGt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="138.40000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="short-arrow-down.png" width="100" height="100"/>
+        <image name="short-arrow-left.png" width="100" height="100"/>
+        <image name="short-arrow-right.png" width="100" height="100"/>
+        <image name="short-arrow-up.png" width="100" height="100"/>
+    </resources>
 </document>
